@@ -1,4 +1,4 @@
-package com.urlshortener.demo;
+package com.urlshortener.gateway_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

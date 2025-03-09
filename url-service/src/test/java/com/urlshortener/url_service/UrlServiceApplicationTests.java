@@ -1,10 +1,10 @@
-package com.urlshortener.demo;
+package com.urlshortener.url_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayServiceApplicationTests {
+class UrlServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
