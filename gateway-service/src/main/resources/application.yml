@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   application:
@@ -9,10 +9,18 @@ spring:
     gateway:
       routes:
         - id: url-service
-          uri: http://localhost:8081
+          uri: lb://url-service  
           predicates:
             - Path=/api/url/**
+
         - id: user-service
-          uri: http://localhost:8082
+          uri: lb://user-service   
           predicates:
             - Path=/api/user/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  
+    register-with-eureka: true
+    fetch-registry: true
